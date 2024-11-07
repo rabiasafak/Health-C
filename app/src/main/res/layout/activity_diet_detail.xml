@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/backImageButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="1dp"
+            android:contentDescription="zil"
+            android:background="@drawable/bg_white_rounded"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            app:tint="@color/heart_color" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorilere Ekle"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+          android:layout_marginLeft="180dp"/>
+        <ImageButton
+            android:id="@+id/dietDetailFavImageButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="1dp"
+            android:contentDescription="zil"
+            android:background="@drawable/bg_white_rounded"
+            android:src="@drawable/baseline_favorite_24"
+            app:tint="@color/heart_color" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRecipeTitle"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Diet Title"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/ivRecipeImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/diet"
+        android:layout_marginTop="25dp"/>
+
+    <!-- Recipe Details (Scrollable) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/recipeDetailsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diet Details"
+            android:textColor="@color/black"
+            android:background="@drawable/roundcorner"
+            android:backgroundTint="@color/light_grey"
+            android:padding="16dp" />
+    </ScrollView>
+</LinearLayout>

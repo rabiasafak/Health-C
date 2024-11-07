@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "175381470875",
+    "project_id": "healthcoach-51a34",
+    "storage_bucket": "healthcoach-51a34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175381470875:android:ee21b78a027881f1e9f03e",
+        "android_client_info": {
+          "package_name": "com.example.healthcoach"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy2PHF95aszFunJx2pK8W5FTpzlgwLWQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

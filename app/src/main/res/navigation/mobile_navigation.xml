@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/blogFragment2">
+    <fragment
+        android:id="@+id/blogFragment2"
+        android:name="com.example.healthcoach.BlogFragment"
+        android:label="fragment_blog"
+        tools:layout="@layout/fragment_blog" />
+    <fragment
+        android:id="@+id/recipesFragment2"
+        android:name="com.example.healthcoach.RecipesFragment"
+        android:label="fragment_recipes"
+        tools:layout="@layout/fragment_recipes" />
+    <fragment
+        android:id="@+id/dietsFragment2"
+        android:name="com.example.healthcoach.DietsFragment"
+        android:label="fragment_diets"
+        tools:layout="@layout/fragment_diets" />
+    <fragment
+        android:id="@+id/favsFragment2"
+        android:name="com.example.healthcoach.FavsFragment"
+        android:label="FavsFragment"
+        tools:layout="@layout/fragment_favs"/>
+</navigation>

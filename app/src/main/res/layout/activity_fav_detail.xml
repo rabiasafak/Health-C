@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <LinearLayout
+        android:id="@+id/backButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/backImageButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="1dp"
+            android:contentDescription="geri"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_white_rounded"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            app:tint="@color/heart_color" />
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="240dp"
+            android:contentDescription="sil"
+            android:id="@+id/sil_btn"
+            android:background="@drawable/bg_white_rounded"
+            android:src="@drawable/baseline_delete_outline_24"
+            />
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/duzenle_btn"
+            android:contentDescription="duzenle"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_white_rounded"
+            android:src="@drawable/baseline_mode_edit_24"
+            />
+    </LinearLayout>
+
+    <!-- Recipe Title -->
+    <TextView
+        android:id="@+id/detayAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backButtonLayout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Recipe Title"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Recipe Image -->
+    <ImageView
+        android:id="@+id/ivRecipeImage"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/detayAd"
+        android:scaleType="centerCrop"
+        android:src="@drawable/defaultrpic"
+        android:layout_marginTop="25dp"/>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivRecipeImage"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/detayAciklama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recipe Details"
+            android:textColor="@color/black"
+            android:background="@drawable/roundcorner"
+            android:backgroundTint="@color/light_grey"
+            android:padding="16dp" />
+    </ScrollView>
+
+
+
+</RelativeLayout>

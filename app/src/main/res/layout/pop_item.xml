@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/singleCardView"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="12dp"
+    android:layout_height="80dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/diet"
+            android:id="@+id/imageView"
+            android:scaleType="centerCrop"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Ketojenik"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/textViewAd"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Tarif"
+                android:textStyle="italic"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:maxLines="1"
+                android:textColor="#979494"
+                android:id="@+id/textViewAciklama"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Kategori"
+                android:textStyle="italic"
+                android:background="@drawable/roundcorner"
+                android:backgroundTint="@color/light_grey"
+                android:layout_marginLeft="200dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:id="@+id/textViewKategori"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonFilterTumu"
+            android:layout_marginTop="16dp" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewPager"
+            android:layout_marginTop="8dp"
+            android:background="?attr/colorPrimary" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

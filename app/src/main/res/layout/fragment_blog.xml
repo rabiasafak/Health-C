@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlogFragment">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textViewThe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The "
+                android:textColor="#7E7E7E"
+                android:layout_marginLeft="10dp"
+                android:textSize="24sp"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="16dp"/>
+            <TextView
+                android:id="@+id/textViewBest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best "
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:textSize="24sp"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="16dp"/>
+            <TextView
+                android:id="@+id/textViewVOY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version Of You "
+                android:textColor="#FF7E7E7E"
+                android:layout_marginLeft="2dp"
+                android:textSize="24sp"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="16dp"/>
+
+        </LinearLayout>
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="37dp"
+            android:clipToOutline="true"
+            android:background="@drawable/bg_white_rounded"
+            android:backgroundTint="@color/light_grey"
+            android:layout_marginTop="25dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textViewAdditional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yeni Yazılar"
+                android:textColor="#555555"
+                android:layout_gravity="center"
+                android:textSize="22sp"
+                android:layout_marginLeft="10dp"
+
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/baseline_star_border_24"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPopular"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/pop_item"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_marginTop="6dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonFilterTumu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:backgroundTint="@color/purple"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/roundcorner"
+                android:text="Tümü"/>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonFilterPMS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pyp"
+                android:background="@drawable/roundcorner"
+                android:layout_marginEnd="5dp"
+                android:text="PMS"/>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonFilterIOlus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pyp"
+                android:background="@drawable/roundcorner"
+                android:layout_marginEnd="5dp"
+
+                android:text="İyi Oluş"/>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonFilterBakim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pyp"
+                android:background="@drawable/roundcorner"
+
+                android:text="Bakım"/>
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/userListRecylerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/pop_item"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+</FrameLayout>
